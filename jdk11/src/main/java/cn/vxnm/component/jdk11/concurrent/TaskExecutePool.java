@@ -4,15 +4,29 @@ import java.util.concurrent.*;
 
 public class TaskExecutePool {
 
-    private BlockingQueue<Runnable> taskQueue;
+    private final BlockingQueue<Runnable> taskQueue;
 
-    private ExecutorService taskExecutorPool;
+    private final ExecutorService taskExecutorPool;
 
-    private class Task implements Runnable {
+    static class Task implements Runnable {
+
+        private volatile String name;
+
+        public Task(String name) {
+            setName(name);
+        }
+
+        public synchronized String getName() {
+            return name;
+        }
+
+        public synchronized void setName(String name) {
+            this.name = name;
+        }
 
         @Override
         public void run() {
-            System.out.println("Hello");
+            System.out.println(getName());
         }
     }
 
