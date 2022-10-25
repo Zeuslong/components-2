@@ -39,4 +39,11 @@ public class TaskExecutePool {
         this.taskExecutorPool.submit(task);
     }
 
+    public Integer getTaskBalance() {
+        return taskQueue.size();
+    }
+
+    public void clear() {
+        taskQueue.clear();
+    }
 }
