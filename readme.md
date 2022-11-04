@@ -14,5 +14,5 @@ This is project is code format for general scenarios. Developer can use those co
 - [ ] SpringBoot properties code template.
 - [ ] SpringBoot docker build code template.
 - [ ] Jackson read from json file code template.
-- [ ] MySQL 8 docker build shell script.
-- [ ] Redis 7 cluster docker build shell script.
+- [x] MySQL 8 docker build shell script.
+- [x] Redis 7 cluster docker build shell script.
