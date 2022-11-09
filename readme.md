@@ -12,7 +12,8 @@ This is project is code format for general scenarios. Developer can use those co
 - [ ] Sharding table with SpringBoot Mybatis MySQL on hash algorithm.
 - [ ] Sharding table with SpringBoot Mybatis MySQL on day.
 - [ ] SpringBoot properties code template.
-- [ ] SpringBoot docker build code template.
+- [x] SpringBoot docker build code template.
+- [ ] Optimize SpringBoot docker build code template with param.
 - [ ] Jackson read from json file code template.
 - [x] MySQL 8 docker build shell script.
 - [x] Redis 7 cluster docker build shell script.
