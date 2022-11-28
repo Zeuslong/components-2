@@ -15,7 +15,7 @@ public class RandomNumsGeneratorTest {
 
         int min_times = 0;
 
-        for (long i = 0; i < 10000000000L; i++) {
+        for (long i = 0; i < 100000000; i++) {
             int random = generator.nextIntClosedInterval(min, max);
             assertTrue(String.format("random = %d", random),min <= random);
             assertTrue(String.format("random = %d", random), random < max);
@@ -25,18 +25,18 @@ public class RandomNumsGeneratorTest {
             }
         }
 
-        System.out.printf("min times = %d", min_times);
+        System.out.printf("min times = %d%n", min_times);
     }
 
     @Test
-    public void testNextInt() {
+    public void nextInt() {
         int min = 1;
         int max = 100;
 
-        int min_times = 0;;
+        int min_times = 0;
         int max_times = 0;
 
-        for (long i = 0; i < 10000000000L; i++) {
+        for (long i = 0; i < 100000000; i++) {
             int random = generator.nextInt(min, max);
             assertTrue(String.format("random = %d", random), min <= random);
             assertTrue(String.format("random = %d", random), random <= max);
@@ -49,7 +49,7 @@ public class RandomNumsGeneratorTest {
             }
         }
 
-        System.out.printf("min times = %d \nmax times = %d", min_times, max_times);
+        System.out.printf("min times = %d  max times = %d%n", min_times, max_times);
     }
 
     @Test
@@ -57,23 +57,23 @@ public class RandomNumsGeneratorTest {
         float min = 1.0f;
         float max = 2.0f;
 
-        for (long i = 0; i < 10000000000L; i++) {
+        int min_times = 0;
+        int max_times = 0;
+
+        for (long i = 0; i < 100000000; i++) {
             float random = generator.nextFloat(min, max);
             assertTrue(String.format("random = %f", random), min <= random);
-            assertTrue(String.format("random = %f", random), random < max);
-        }
-    }
-
-    @Test
-    public void testNextFloat() {
-        float min = 1.0f;
-        float max = 2.0f;
-
-        for (long i = 0; i < 10000000000L; i++) {
-            float random = generator.nextFloat(min, max, 0.1f);
-            assertTrue(String.format("random = %f", random), min <= random);
             assertTrue(String.format("random = %f", random), random <= max);
+
+            if (min == random) {
+                min_times ++;
+            }
+            if (max == random) {
+                max_times ++;
+            }
         }
+
+        System.out.printf("min times = %d  max times = %d%n", min_times, max_times);
     }
 
     @Test
@@ -81,22 +81,22 @@ public class RandomNumsGeneratorTest {
         double min = 1.0f;
         double max = 2.0f;
 
-        for (long i = 0; i < 10000000000L; i++) {
+        int min_times = 0;
+        int max_times = 0;
+
+        for (long i = 0; i < 100000000; i++) {
             double random = generator.nextDouble(min, max);
             assertTrue(String.format("random = %f", random), min <= random);
-            assertTrue(String.format("random = %f", random), random < max);
-        }
-    }
+            assertTrue(String.format("random = %f", random), random <= max);
 
-    @Test
-    public void testNextDouble() {
-        double min = 1.0f;
-        double max = 2.0f;
-
-        for (long i = 0; i < 10000000000L; i++) {
-            double random = generator.nextDouble(min, max, 0.01d);
-            assertTrue(String.format("random = %f", random), min <= random);
-            assertTrue(String.format("random = %f", random), random < max);
+            if (min == random) {
+                min_times ++;
+            }
+            if (max == random) {
+                max_times ++;
+            }
         }
+
+        System.out.printf("min times = %d  max times = %d%n", min_times, max_times);
     }
 }
