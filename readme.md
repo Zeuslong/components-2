@@ -32,6 +32,10 @@ This is project is code format for general scenarios. Developer can use those co
 - [x] Redis 7 cluster docker build shell script.
 - [ ] Nginx 1.23 docker build shell script.
 
+## Docker composer
+
+- [x] MySQL 8 docker composer build shell script and docker-compose.yml.
+
 ## Others
 
 - [ ] Jackson read from json file code template.
