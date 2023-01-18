@@ -35,6 +35,7 @@ This is project is code format for general scenarios. Developer can use those co
 ## Docker composer
 
 - [x] MySQL 8 docker composer build shell script and docker-compose.yml.
+- [x] Redis 7 cluster docker build shell script and docker-compose.yml.
 
 ## Others
 
