@@ -6,7 +6,7 @@ This is project is code format for general scenarios. Developer can use those co
 
 ## Project
 
-- [ ] Apply an open source licenses.
+- [x] Apply an open source licenses.
 
 ## JDK
 
