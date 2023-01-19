@@ -10,8 +10,6 @@ public class CollectionPrinter {
 
     public static int FLUSH_LIMIT = 1024;
 
-    public static String SEPARATOR = "========";
-
     public static <T> void printArray(T[] array) {
         printArray(array, Objects::toString);
     }
@@ -44,8 +42,6 @@ public class CollectionPrinter {
 
         String itemFormatter = "| %s ";
         StringBuilder printBuff = new StringBuilder(FLUSH_LIMIT);
-
-        System.out.println(SEPARATOR);
 
         for (T t : array) {
             String item = f.apply(t);
@@ -94,8 +90,6 @@ public class CollectionPrinter {
         String itemFormatter = "| %s |";
         String next = " -- ";
         StringBuilder printBuff = new StringBuilder(FLUSH_LIMIT);
-
-        System.out.println(SEPARATOR);
 
         int counter = 0;
         for (T t : listCopy) {
@@ -160,8 +154,6 @@ public class CollectionPrinter {
         Map<K, V> readView = Map.copyOf(map);
         Set<Map.Entry<K, V>> readViewSet = readView.entrySet();
 
-        System.out.println(SEPARATOR);
-
         for (Map.Entry<K, V> entry : readViewSet) {
             String key = keyF.apply(entry.getKey());
             String value = valueF.apply(entry.getValue());
@@ -211,8 +203,6 @@ public class CollectionPrinter {
         StringBuilder printBuff = new StringBuilder(FLUSH_LIMIT);
         T[] ts = (T[]) set.toArray();
 
-        System.out.println(SEPARATOR);
-
         for (T t : ts) {
             String item = f.apply(t);
             String printArgs = String.format(itemFormatter, item);
@@ -250,10 +240,10 @@ public class CollectionPrinter {
      */
     public static <T> void printQueue(Queue<T> queue, Function<T, String> f) {
         if (queue == null) {
-            System.out.println("Null queue");
+            System.out.println("null queue");
             return;
         } else if (queue.size() == 0) {
-            System.out.println("Empty Queue");
+            System.out.println("empty Queue");
             return;
         }
 
@@ -262,7 +252,6 @@ public class CollectionPrinter {
         String itemFormatter = "| %s ";
         StringBuilder printBuff = new StringBuilder(FLUSH_LIMIT);
 
-        System.out.println(SEPARATOR);
         System.out.printf("<- ");
 
         for (T t : queueCopy) {
@@ -302,17 +291,16 @@ public class CollectionPrinter {
      */
     public static <T> void printStack(Stack<T> stack, Function<T, String> f) {
         if (stack == null) {
-            System.out.println("Null stack");
+            System.out.println("null stack");
             return;
         }
         else if (stack.isEmpty()) {
-            System.out.println("Empty stack");
+            System.out.println("empty stack");
             return;
         }
 
         Stack<T> stackCopy = (Stack<T>) stack.clone();
         List<String> stackList = new ArrayList<>(stackCopy.size());
-
 
         int maxLength = 0;
         for (T t : stackCopy) {
@@ -322,10 +310,6 @@ public class CollectionPrinter {
                 maxLength = item.length();
             }
         }
-
-        System.out.println();
-
-        System.out.println(SEPARATOR);
 
         for (String s : stackList) {
             int startLength = Math.floorDiv(maxLength - s.length(), 2);
