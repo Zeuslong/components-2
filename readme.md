@@ -14,10 +14,11 @@ This is project is code format for general scenarios. Developer can use those co
 - [x] Collection printer.
 - [x] Async log printer.
 - [X] Optimize the usage async log printer by add methods such as info / warning.
-- [ ] Encapsulate Random Method for obtaining random int / float / double
+- [ ] Encapsulate Random Method for obtaining random int / float / double.
 
 ## Spring
 
+- [ ] SpringBoot with Mybatis code template.
 - [ ] Sharding database with SpringBoot Mybatis and MySQL.
 - [ ] Sharding table with SpringBoot Mybatis MySQL on hash algorithm.
 - [ ] Sharding table with SpringBoot Mybatis MySQL on day.
