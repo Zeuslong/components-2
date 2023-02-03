@@ -13,7 +13,7 @@ This is project is code format for general scenarios. Developer can use those co
 - [x] Application Path helper.
 - [x] Collection printer.
 - [x] Async log printer.
-- [ ] Optimize the usage async log printer by add methods such as log / warm.
+- [X] Optimize the usage async log printer by add methods such as info / warning.
 - [ ] Encapsulate Random Method for obtaining random int / float / double
 
 ## Spring
