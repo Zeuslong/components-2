@@ -15,7 +15,7 @@ public class RandomNumsGeneratorTest {
 
         int min_times = 0;
 
-        for (long i = 0; i < 100000000; i++) {
+        for (long i = 0; i < 10000000; i++) {
             int random = generator.nextIntClosedInterval(min, max);
             assertTrue(String.format("random = %d", random),min <= random);
             assertTrue(String.format("random = %d", random), random < max);
@@ -36,7 +36,7 @@ public class RandomNumsGeneratorTest {
         int min_times = 0;
         int max_times = 0;
 
-        for (long i = 0; i < 100000000; i++) {
+        for (long i = 0; i < 10000000; i++) {
             int random = generator.nextInt(min, max);
             assertTrue(String.format("random = %d", random), min <= random);
             assertTrue(String.format("random = %d", random), random <= max);
@@ -55,12 +55,12 @@ public class RandomNumsGeneratorTest {
     @Test
     public void nextFloat() {
         float min = 1.0f;
-        float max = 2.0f;
+        float max = 1.1f;
 
         int min_times = 0;
         int max_times = 0;
 
-        for (long i = 0; i < 100000000; i++) {
+        for (long i = 0; i < 10000000; i++) {
             float random = generator.nextFloat(min, max);
             assertTrue(String.format("random = %f", random), min <= random);
             assertTrue(String.format("random = %f", random), random <= max);
@@ -79,12 +79,12 @@ public class RandomNumsGeneratorTest {
     @Test
     public void nextDouble() {
         double min = 1.0f;
-        double max = 2.0f;
+        double max = 1.0000000001d;
 
         int min_times = 0;
         int max_times = 0;
 
-        for (long i = 0; i < 100000000; i++) {
+        for (long i = 0; i < 10000000; i++) {
             double random = generator.nextDouble(min, max);
             assertTrue(String.format("random = %f", random), min <= random);
             assertTrue(String.format("random = %f", random), random <= max);

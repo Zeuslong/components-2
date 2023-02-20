@@ -8,28 +8,6 @@ This is project is code format for general scenarios. Developer can use those co
 
 - [x] Apply an open source licenses.
 
-## html & css
-
-- [x] Ring rotation with 2d & 3d
-
-## JDK
-
-- [x] Application Path helper.
-- [x] Collection printer.
-- [x] Async log printer.
-- [X] Optimize the usage async log printer by add methods such as info / warning.
-- [ ] Encapsulate Random Method for obtaining random int / float / double.
-
-## Spring
-
-- [ ] SpringBoot with Mybatis code template.
-- [ ] Sharding database with SpringBoot Mybatis and MySQL.
-- [ ] Sharding table with SpringBoot Mybatis MySQL on hash algorithm.
-- [ ] Sharding table with SpringBoot Mybatis MySQL on day.
-- [x] SpringBoot properties code template.
-- [ ] Optimize SpringBoot docker build code template with param.
-- [ ] SpringBoot with Apollo code template.
-
 ## Docker
 
 - [x] SpringBoot docker build code template.
@@ -41,7 +19,30 @@ This is project is code format for general scenarios. Developer can use those co
 ## Docker composer
 
 - [x] MySQL 8 docker composer build shell script and docker-compose.yml.
-- [x] Redis 7 cluster docker build shell script and docker-compose.yml.
+- [x] Redis 7 cluster docker composer build shell script and docker-compose.yml.
+
+## html & css
+
+- [x] Ring rotation with 2d & 3d
+
+## JDK
+
+- [x] Application Path helper.
+- [x] Collection printer.
+- [x] Async log printer.
+- [X] Optimize the usage async log printer by add methods such as info / warning.
+- [ ] Encapsulate Random Method for obtaining random int / float / double.
+- [ ] File input stream read helper, the implementation is done using byte[].
+
+## Spring
+
+- [ ] SpringBoot with Mybatis code template.
+- [ ] Sharding database with SpringBoot Mybatis and MySQL.
+- [ ] Sharding table with SpringBoot Mybatis MySQL on hash algorithm.
+- [ ] Sharding table with SpringBoot Mybatis MySQL on day.
+- [x] SpringBoot properties code template.
+- [ ] Optimize SpringBoot docker build code template with param.
+- [ ] SpringBoot with Apollo code template.
 
 ## Others
 
