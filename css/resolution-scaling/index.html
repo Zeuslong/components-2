@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分辨率同比缩放</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .desc {
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+<div class="container" id="container">
+    <span class="desc">Hello world</span>
+</div>
+<script type="text/javascript">
+    // 获取 container 元素
+    const container = document.getElementById('container');
+    const scale = function () {
+        // 获取屏幕宽度和高度
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+
+        // 计算缩放比例
+        const scaleX = screenWidth / 1920;
+        const scaleY = screenHeight / 1080;
+
+        console.log(container);
+
+        // 设置缩放样式
+        container.style.transform = `scale(${scaleX}, ${scaleY})`;
+    };
+
+    scale();
+
+    // 监听窗口大小改变事件
+    window.addEventListener('resize', scale);
+
+</script>
+</body>
+</html>
