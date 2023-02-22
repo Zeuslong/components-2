@@ -25,7 +25,7 @@ This is project is code format for general scenarios. Developer can use those co
 
 - [x] Ring rotation with 2d & 3d.
 - [x] Fixed resolution page adaptive scaling.
-- [ ] 3d cube with css.
+- [x] 3d cube with css.
 
 ## JDK
 
