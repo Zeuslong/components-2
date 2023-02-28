@@ -7,6 +7,7 @@ This is project is code format for general scenarios. Developer can use those co
 ## Project
 
 - [x] Apply an open source licenses.
+- [ ] Thanks to JetBrains for this support.
 
 ## Docker
 
