@@ -33,4 +33,13 @@ public class InfoModel {
     public void setCreateTime(LocalDateTime createTime) {
         this.createTime = createTime;
     }
+
+    @Override
+    public String toString() {
+        return "InfoModel{" +
+                "id=" + id +
+                ", info='" + info + '\'' +
+                ", createTime=" + createTime +
+                '}';
+    }
 }

@@ -2,11 +2,11 @@ spring:
   datasource:
     mysql1:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      jdbc-url: jdbc:mysql://127.0.0.1:13306/info?characterEncoding=utf-8
-      password: mysql123456
+      jdbc-url: jdbc:mysql://127.0.0.1:13306/demo?characterEncoding=utf-8
       username: root
+      password: mysql123456
     mysql2:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      jdbc-url: jdbc:mysql://127.0.0.1:13307/info?characterEncoding=utf-8
-      password: mysql123456
+      jdbc-url: jdbc:mysql://127.0.0.1:13307/demo?characterEncoding=utf-8
       username: root
+      password: mysql123456
