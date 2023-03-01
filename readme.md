@@ -16,6 +16,7 @@ This is project is code format for general scenarios. Developer can use those co
 - [x] MySQL 8 docker build shell script.
 - [x] Redis 7 cluster docker build shell script.
 - [x] Nginx 1.23 docker build shell script.
+- [ ] Zookeeper 3.8.1 build shell script.
 
 ## Docker composer
 
