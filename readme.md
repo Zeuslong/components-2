@@ -57,4 +57,4 @@ This is project is code format for general scenarios. Developer can use those co
 
 Thanks to JetBrains for supporting me.
 
-![JetBrains Logo (Main) logo](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png)
+<img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo." width="30%">
