@@ -2,9 +2,6 @@
 
 This is project is code format for general scenarios. Developer can use those code to resolve some problems quickly.
 
-Thanks to JetBrains for supporting me.
-
-![JetBrains Logo (Main) logo](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png)
 
 # todo
 
@@ -55,3 +52,9 @@ Thanks to JetBrains for supporting me.
 ## Others
 
 - [ ] Jackson read from json file code template.
+
+# Acknowledgements
+
+Thanks to JetBrains for supporting me.
+
+![JetBrains Logo (Main) logo](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png)
